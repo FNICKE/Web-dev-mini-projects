@@ -1,58 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
-    <title>Chat App</title>
-    <script src="https://kit.fontawesome.com/ff53e12c48.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chit Chat 🚀</title>
+
+  <!-- Tailwind CSS for styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/ff53e12c48.js" crossorigin="anonymous"></script>
+
+  <!-- Moment.js for time formatting -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js"
+    integrity="sha512-Q1f3TS3vSt1jQ8AwP2OuenztnLU6LwxgyyYOG1jgMW/cbEMHps/3wjvnl1P3WTrF3chJUWEoxDUEjMxDV8pujg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body>
-    <h1 class="title" style="color: aliceblue;">Chit Chat🚀</h1>
-    <div class="main">
-        <div class="name">
-            <span><i class="fas fa-user-friends    "></i></span>
-            <input type="text" id="name-input" class="name-input" value="anonymous" maxlength="20"/>
-        
-    </div>  
-        <ul class="message-container" id="message-container">
-            <li class="message-left">
-                <p class="message">Hello
-                    <span>10:10 AM ⚫️ Today </span>
-                    </span>
-                </p>
-            </li>
-            <li class="message-right">
-                <p class="message">Hello
-                    <span>10:10 AM, ⚫️ Today</span>
-                    </span>
-                </p>
-            </li>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen flex flex-col items-center p-4 text-white font-sans">
 
-            <li class="message-feedback">
-                <p class="feedback" id="feedback">Hello is typing...
-                    
-                </p>
-                </li>
-        </ul>
-        <form class="message-form" id="message-form">
-            <input type="text" class="message-input" id="message-input" placeholder="Type something here...">
-            <div class="v-divider">
+  <h1 class="text-4xl font-bold mb-4 text-white">Chit Chat 🚀</h1>
 
-            </div>
-            <button type="submit" class="send-button">Send
-                <span>
-                    <i class="fa fa-rocket" aria-hidden="true"></i>
-            </span>
-        </button>
-        </form>
+  <div class="w-full max-w-2xl bg-gray-900 rounded-xl shadow-xl p-6">
+    
+    <!-- User Name Input -->
+    <div class="flex items-center space-x-4 mb-4">
+      <i class="fas fa-user-friends text-xl text-blue-400"></i>
+      <input
+        type="text"
+        id="name-input"
+        class="bg-gray-800 border border-gray-600 rounded px-4 py-2 text-white w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+        value="anonymous"
+        maxlength="20"
+      />
     </div>
-    <h3 class="clients-total" id="client-total">Total clients: 2</h3>
-    <script src="/socket.io/socket.io.js"></script>
-   
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js" integrity="sha512-Q1f3TS3vSt1jQ8AwP2OuenztnLU6LwxgyyYOG1jgMW/cbEMHps/3wjvnl1P3WTrF3chJUWEoxDUEjMxDV8pujg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="main.js"></script>    
+    <!-- Chat Messages -->
+    <ul id="message-container" class="space-y-3 max-h-[400px] overflow-y-auto pr-2">
+      <li class="flex justify-start">
+        <div class="bg-gray-700 rounded-lg px-4 py-2 text-white max-w-sm">
+          <p>Hello <span class="block text-xs text-gray-300 mt-1">10:10 AM ⚫️ Today</span></p>
+        </div>
+      </li>
+
+      <li class="flex justify-end">
+        <div class="bg-blue-600 rounded-lg px-4 py-2 text-white max-w-sm">
+          <p>Hello <span class="block text-xs text-gray-200 mt-1">10:10 AM ⚫️ Today</span></p>
+        </div>
+      </li>
+
+      <!-- Typing Feedback -->
+      <li class="text-sm italic text-gray-400" id="feedback">Someone is typing...</li>
+    </ul>
+
+    <!-- Send Message Form -->
+    <form id="message-form" class="flex items-center mt-4 space-x-2">
+      <input
+        type="text"
+        id="message-input"
+        class="flex-1 px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        placeholder="Type something here..."
+        autocomplete="off"
+      />
+      <button
+        type="submit"
+        class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-all flex items-center space-x-1"
+      >
+        <span>Send</span>
+        <i class="fa fa-rocket"></i>
+      </button>
+    </form>
+
+    <!-- Total Clients -->
+    <div class="text-sm text-gray-400 mt-3 text-right" id="client-total">Total clients: 2</div>
+  </div>
+
+  <!-- Socket.io -->
+  <script src="/socket.io/socket.io.js"></script>
+
+  <!-- Your main JS file -->
+  <script src="main.js"></script>
 
 </body>
 </html>
