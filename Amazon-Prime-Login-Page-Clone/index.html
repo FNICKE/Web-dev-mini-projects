@@ -8,184 +8,204 @@
     <title>Welcome to Prime Videos</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <div class="whole">
-
-        <!-- Header -->
         <header class="head">
             <div class="logo">
                 <a href="https://www.primevideo.com/storefront/home/ref=atv_nb_logo" id="alogo">
-                    <div class="navlogo">Go To Home Page</div>
+                    <div class="navlogo">Prime Video</div>
                 </a>
             </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#movies">Movies</a></li>
+                    <li><a href="#shows">TV Shows</a></li>
+                    <li><a href="#originals">Originals</a></li>
+                    <li><a href="#sports">Sports</a></li>
+                </ul>
+            </nav>
             <div class="right">
+                <span class="search-icon">
+                    <span class="iconify" data-icon="lucide:search"></span>
+                </span>
                 <span class="lang">
                     <span class="iconify" data-icon="bi:globe" data-inline="false"></span>
                     <span class="role">EN</span>
-
                 </span>
                 <span class="sigin">
-                    <a href="https://www.primevideo.com/auth-redirect/ref=atv_nb_sign_in?signin=1&returnUrl=%2Fref%3Datv_nb_logo%3Fref_%3Datv_nb_logo"
-                        class="sigin">Sign In</a>
+                    <a href="#" class="sigin">Sign In</a>
                 </span>
             </div>
         </header>
 
         <div class="content">
-
-            <!-- Part-1 -->
             <div class="login-now">
                 <div class="content-left">
+                    <div class="hero-badge">
+                        <span class="iconify" data-icon="lucide:star"></span>
+                        Award-Winning Content
+                    </div>
                     <h1 class="welcome">
                         Welcome to Prime Video
                     </h1>
-                    <p class="join"> Join Prime to watch latest movies, TV Shows and award winning Amazon-Originals </p>
+                    <p class="join">Join Prime to watch latest movies, TV Shows and award winning Amazon Originals. Stream thousands of titles with unlimited access.</p>
 
-                    <span class="login-prime"> <a
-                            href="https://www.primevideo.com/region/eu/auth-redirect/ref_=dvm_mlp_in_ai_s_g_unrec_lego/ref=atv_mlp_default_ft?_encoding=UTF8&amp%3BreturnUrl=%2Fregion%2Ffr%2F&deviceTypeId=A13Q6A55DBZB7M&signin=1"
-                            class="login-link">Login to Join Prime</a>
-                    </span>
+                    <div class="hero-buttons">
+                        <a href="#" class="login-link primary-btn">Start Your Free Trial</a>
+                        <a href="#" class="watch-trailer secondary-btn">
+                            <span class="iconify" data-icon="lucide:play"></span>
+                            Watch Trailer
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3>10,000+</h3>
+                            <p>Movies & Shows</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Original Series</p>
+                        </div>
+                        <div class="stat">
+                            <h3>4.5★</h3>
+                            <p>User Rating</p>
+                        </div>
+                    </div>
                 </div>
-
             </div>
 
-            <!-- Part-2 -->
+            <div class="featured-content">
+                <div class="container">
+                    <h2 class="section-title">Trending Now</h2>
+                    <div class="content-slider">
+                        <div class="slide active">
+                            <div class="slide-content">
+                                <h3>The Boys</h3>
+                                <p>A group of vigilantes set out to take down corrupt superheroes.</p>
+                                <div class="slide-rating">
+                                    <span class="iconify" data-icon="lucide:star"></span>
+                                    <span>9.1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <h3>The Marvelous Mrs. Maisel</h3>
+                                <p>A housewife discovers she has a talent for stand-up comedy.</p>
+                                <div class="slide-rating">
+                                    <span class="iconify" data-icon="lucide:star"></span>
+                                    <span>8.7</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <h3>Jack Ryan</h3>
+                                <p>CIA analyst Jack Ryan is pulled into a dangerous field assignment.</p>
+                                <div class="slide-rating">
+                                    <span class="iconify" data-icon="lucide:star"></span>
+                                    <span>8.0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="prev-btn">
+                            <span class="iconify" data-icon="lucide:chevron-left"></span>
+                        </button>
+                        <button class="next-btn">
+                            <span class="iconify" data-icon="lucide:chevron-right"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
             <div class="start">
                 <div class="content-right">
                     <h1 class="Entertainment">Great Entertainment</h1>
-                    <p class="detail">With your prime membership, you have aceess to exclusive Amazon
-                        Originals,<br>Blockbuster
-                        BollyWood Movies and regional movies and more.
-                    </p>
+                    <p class="detail">With your prime membership, you have access to exclusive Amazon Originals, Blockbuster Bollywood Movies and regional movies and more.</p>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="iconify" data-icon="lucide:check-circle"></span>
+                            Exclusive Amazon Originals
+                        </li>
+                        <li>
+                            <span class="iconify" data-icon="lucide:check-circle"></span>
+                            4K Ultra HD & HDR content
+                        </li>
+                        <li>
+                            <span class="iconify" data-icon="lucide:check-circle"></span>
+                            Ad-free streaming experience
+                        </li>
+                    </ul>
                     <span class="started">
-                        <a href="https://www.primevideo.com/region/eu/auth-redirect/ref_=dvm_mlp_in_ai_s_g_unrec_button3/ref=dvm_MLP_IN_Popt_2_ft?_encoding=UTF8&amp%3BreturnUrl=%2Fregion%2Ffr%2F&deviceTypeId=A13Q6A55DBZB7M&signin=1"
-                            class="start-link">Get Started</a>
+                        <a href="#" class="start-link">Get Started</a>
                     </span>
-
                 </div>
-
             </div>
 
-            <!-- Part-3 -->
-            <div class="memberships">
-                <div class="content-left-2">
-                    <h1 class="member-h1">One memberships, many benefits</h1>
-                    <p class="benefits">Your Prime membership also includes ad-free music along with unlimited
-                        free,<br>fast delivery on eligible items, exclusive accessto deals & more
-                    </p>
-                    <span class="started">
-                        <a href="https://www.primevideo.com/region/eu/auth-redirect/ref_=dvm_mlp_in_ai_s_g_unrec_button3/ref=dvm_MLP_IN_Popt_2_ft?_encoding=UTF8&amp%3BreturnUrl=%2Fregion%2Ffr%2F&deviceTypeId=A13Q6A55DBZB7M&signin=1"
-                            class="start-link">Get Started</a>
-
-                    </span>
-                    <p class="asterik">*Go to amazon.in/prime for more information</p>
-
-                </div>
-
-            </div>
-            <!-- Part-4 -->
-            <div class="tv-stick">
-                <div class="content-right-2">
-                    <h1 class="firetv-h1">Even better with Fire TV Stick</h1>
-                    <p class="firetv-use">The biggest movies and TV shows are always better on a big screen.Simply plug
-                        your
-                        Amazon Fire TV Stick and stream on any HDTV.Press the voice button on the remote and say the
-                        title
-                        you want to watch to find it in seconds.
-                    </p>
-                    <span class="started">
-                        <a href="https://www.primevideo.com/region/eu/auth-redirect/ref_=dvm_mlp_in_ai_s_g_unrec_button3/ref=dvm_MLP_IN_Popt_2_ft?_encoding=UTF8&amp%3BreturnUrl=%2Fregion%2Ffr%2F&deviceTypeId=A13Q6A55DBZB7M&signin=1"
-                            class="start-link">Get Started</a>
-
-                    </span>
-
-                </div>
-
-            </div>
-
-            <!-- part-5 -->
-            <div class="multi-content">
-                <div class="first">
-                    <div class="img3">
-                        <img class="dv-multi-column-image"
-                            src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/Magellan_MLP/PV_Benefits_Devices.jpg"
-                            alt="Watch anywhere">
+            <div class="pricing-section">
+                <div class="container">
+                    <h2 class="section-title">Choose Your Plan</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card">
+                            <div class="plan-header">
+                                <h3>Monthly</h3>
+                                <div class="price">
+                                    <span class="currency">₹</span>
+                                    <span class="amount">179</span>
+                                    <span class="period">/month</span>
+                                </div>
+                            </div>
+                            <ul class="plan-features">
+                                <li><span class="iconify" data-icon="lucide:check"></span>HD streaming</li>
+                                <li><span class="iconify" data-icon="lucide:check"></span>Watch on 2 devices</li>
+                                <li><span class="iconify" data-icon="lucide:check"></span>Download for offline</li>
+                            </ul>
+                            <button class="plan-btn">Choose Plan</button>
+                        </div>
+                        
+                        <div class="pricing-card popular">
+                            <div class="popular-badge">Most Popular</div>
+                            <div class="plan-header">
+                                <h3>Annual</h3>
+                                <div class="price">
+                                    <span class="currency">₹</span>
+                                    <span class="amount">1499</span>
+                                    <span class="period">/year</span>
+                                </div>
+                                <div class="savings">Save 30%</div>
+                            </div>
+                            <ul class="plan-features">
+                                <li><span class="iconify" data-icon="lucide:check"></span>4K Ultra HD streaming</li>
+                                <li><span class="iconify" data-icon="lucide:check"></span>Watch on 4 devices</li>
+                                <li><span class="iconify" data-icon="lucide:check"></span>Unlimited downloads</li>
+                                <li><span class="iconify" data-icon="lucide:check"></span>Early access to content</li>
+                            </ul>
+                            <button class="plan-btn primary">Choose Plan</button>
+                        </div>
+                        
+                        <div class="pricing-card">
+                            <div class="plan-header">
+                                <h3>Student</h3>
+                                <div class="price">
+                                    <span class="currency">₹</span>
+                                    <span class="amount">89</span>
+                                    <span class="period">/month</span>
+                                </div>
+                            </div>
+                            <ul class="plan-features">
+                                <li><span class="iconify" data-icon="lucide:check"></span>HD streaming</li>
+                                <li><span class="iconify" data-icon="lucide:check"></span>Watch on 1 device</li>
+                                <li><span class="iconify" data-icon="lucide:check"></span>Student verification required</li>
+                            </ul>
+                            <button class="plan-btn">Choose Plan</button>
+                        </div>
                     </div>
-                    <h2 class="h22">Watch Anywhere</h2>
-                    <p class="para">Enjoy from the web or with the Prime Video app on your phone, tablet, or select
-                        Smart
-                        TVs — on up to 3 devices at once.</p>
-                </div>
-                <div class="second">
-                    <div class="img3">
-                        <img class="dv-multi-column-image"
-                            src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/Magellan_MLP/PV_Benefits_Download_IN.jpg"
-                            alt="Download and go">
-                    </div>
-                    <h2 class="h22">Download and go</h2>
-                    <p class="para">Watch offline on the Prime Video app when you download titles to your iPhone, iPad,
-                        Tablet, or Android device.
-                    </p>
-                </div>
-                <div class="third">
-                    <div class="img3">
-                        <img class="dv-multi-column-image"
-                            src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/Magellan_MLP/300x300_Tile_1.png"
-                            alt="Data saver">
-                    </div>
-                    <h2 class="h22">Data Saver</h2>
-                    <p class="para">Control data usage while downloading and watching videos on select phones or
-                        tablets.
-                    </p>
                 </div>
             </div>
-            <!-- Part-6 -->
-            <div class="family">
-                <div class="content-left-3">
-                    <h1 class="friendly">Family Friendly</h1>
-                    <p class="friend">With easy to use Parental Controls and a dedicated kids page, enjoy secure,
-                        ad-free
-                        kids entertainment. Kids can enjoy popular TV shows like Peppa Pig, Powerpuff Girls, and Chhota
-                        Bheem.</p>
-                    <span class="started">
-                        <a href="https://www.primevideo.com/region/eu/auth-redirect/ref_=dvm_mlp_in_ai_s_g_unrec_button3/ref=dvm_MLP_IN_Popt_2_ft?_encoding=UTF8&amp%3BreturnUrl=%2Fregion%2Ffr%2F&deviceTypeId=A13Q6A55DBZB7M&signin=1"
-                            class="start-link">Get Started</a>
-
-                    </span>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- footer -->
-
-        <footer class="foot">
-            <div class="foot-logo">
-                <img src="data:image/png;base64,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"
-                    alt="" class="ft-img">
-
-            </div>
-            <div class="foot-links">
-                <ul class="list-of-links">
-
-                    <li><a href="/help/ref=dvm_MLP_EU_privacy?nodeId=202064890 " class="links">Terms and Privacy
-                            Notice</a></li>
-                    <li><a href="/contactus/ref=dvm_MLP_EU_contact" class="links">Send us feedback</a></li>
-
-                    <li><a href="/help/ref=dvm_MLP_EU_help" class="links">Help</a></li>
-                    <li>
-                        <p class="link-para">© 1996-2021, Amazon.com, Inc. or its affiliates</p>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-
-    </div>
-
-</body>
-
-</html>
